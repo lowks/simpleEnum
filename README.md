@@ -1,5 +1,5 @@
 # simpleEnum
-A really really simple enum class
+A really really simple Python enum class
 
 # Usage
 ```python
