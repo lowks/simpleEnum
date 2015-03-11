@@ -9,4 +9,4 @@ EDays = Enum ("SUNDAY", "MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", 
 print EDays.TUESDAY
 ```
 
-This will print 0
+This will print 2
