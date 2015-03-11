@@ -1,13 +1,20 @@
 from setuptools import setup
+from distutils.core import setup
 
-with open('flask/.version', 'rb') as f:
-    version = f.read ().decode ("utf-8")
- 
+main_module_name = 'simpleEnum'
+main_module      = __import__(main_module_name)
+#description      = main_module.__doc__.split('\n\n', 1)
+
+setup(name=main_module_name,
+      version = main_module.__version__,
+      py_modules=[main_module_name],
+      )
+
+'''
 setup(
-    name = 'simpleEnum',
-    packages = ['simpleEnum'],
-    version = version
-    description = 'A really simple enum implementation',
+    name = main_module_name,
+    version = main_module.__version__,
+    description = description,
     author='galtza',
     author_email='galtza@wokki.me',
     url='https://github.com/galtza/simpleEnum',
@@ -22,3 +29,4 @@ setup(
         'Topic :: Software Development :: Libraries :: Python Modules'
     ]
 )
+'''
