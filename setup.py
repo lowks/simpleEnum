@@ -3,7 +3,6 @@ from distutils.core import setup
 
 main_module_name = 'simpleEnum'
 main_module      = __import__(main_module_name)
-#description      = main_module.__doc__.split('\n\n', 1)
 
 setup(name=main_module_name,
       version = main_module.__version__,
@@ -14,7 +13,7 @@ setup(name=main_module_name,
 setup(
     name = main_module_name,
     version = main_module.__version__,
-    description = description,
+    description = "A really really simple Python enum class",
     author='galtza',
     author_email='galtza@wokki.me',
     url='https://github.com/galtza/simpleEnum',
